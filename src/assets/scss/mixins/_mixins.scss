@@ -1,0 +1,52 @@
+/* px to rem */
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin width-col($n) {
+  width: calc((100% / #{$n}) - 0.1px);
+  flex: 0 1 auto;
+}
+
+/* Media queries */
+@mixin media-laptop-large {
+  @media screen and (min-width: $madiaWidthLaptopLarge) {
+    @content;
+  }
+}
+
+@mixin media-laptop {
+  @media screen and (min-width: $mediaWidthLaptop) and (max-width: $madiaWidthLaptopLarge) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media screen and (min-width: $mediaWidthTablet) and (max-width: $mediaWidthLaptop) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media screen and (min-width: $mediaWidthMobile) and (max-width: $mediaWidthTablet) {
+    @content;
+  }
+}

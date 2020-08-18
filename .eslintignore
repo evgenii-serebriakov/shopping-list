@@ -1,0 +1,8 @@
+node_modules
+
+build/
+dist/
+
+.vscode
+.git
+postcss.config.js

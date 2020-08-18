@@ -1,0 +1,62 @@
+@import url("~normalize.css");
+@import "utils/_variables";
+@import "utils/_fonts";
+@import "mixins/_mixins";
+
+/* === Common === */
+*, *:before, *:after { box-sizing: border-box; }
+
+.page {
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  font-style: $mainFontStyle;
+  line-height: $mainLineHeight;
+  color: $default-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  width: 100%;
+  height: auto;  
+}
+
+a { text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $widthMobileSmall;
+  
+  @include media-mobile {
+    max-width: $widthMobile;
+  }
+  @include media-tablet {
+    max-width: $widthTable;
+  }
+  @include media-laptop {
+    max-width: $widthLaptop;
+  }
+  @include media-laptop-large {
+    max-width: $widthLaptopLarge;
+  }
+}
+
+.col {
+  @include width-col(12);
+}
+
+.col-md {
+  @include media-tablet {
+    @include width-col(2);
+  }
+}
+/* @import "common/my-module.scss"; */
+/* === / Common === */
+
