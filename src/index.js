@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import App from '@/components/App';
+import store from '@/store/store';
+import routes from '@/routes';
+
+import { Header, Footer } from '@/components/Shared';
 
 import '@/assets/scss/main.scss';
 
 ReactDom.render(
-  <App />,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Router>
+            <Header />
+            {routes}
+            <Footer />
+        </Router>
+    </Provider>,
+    document.getElementById('root')
 );

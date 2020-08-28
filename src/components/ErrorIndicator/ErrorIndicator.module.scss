@@ -1,0 +1,45 @@
+.error {
+    &-indicator {
+        text-align: center;
+        background-color: $dangerColor;
+        border-radius: 5px;
+        padding: 20px 15px;
+        margin: auto;
+        
+        &__title {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        &__btn {
+            background-color: #fed130ab;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 30px;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                background: #fed1307c;;
+            }
+        }
+        @include width-col(12);
+
+        @include media-laptop-large {
+            @include width-col(4)
+        }
+
+        @include media-laptop {
+            @include width-col(5)
+        }
+
+        @include media-tablet {
+            @include width-col(8)
+        }
+
+        @include media-mobile {
+            @include width-col(9);
+        }
+    }
+}

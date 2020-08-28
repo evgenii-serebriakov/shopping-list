@@ -1,5 +1,6 @@
 @import url("~normalize.css");
 @import "utils/_variables";
+@import "utils/font-awesome/_font-awesome.scss";
 @import "utils/_fonts";
 @import "mixins/_mixins";
 
@@ -7,15 +8,27 @@
 *, *:before, *:after { box-sizing: border-box; }
 
 .page {
-  font-family: $mainFont;
+  font-family: $fontMontserrat;
 	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   font-style: $mainFontStyle;
   line-height: $mainLineHeight;
-  color: $default-color;
+
+  color: $darkShadeColor75;
+  background-color: $whiteColor;
+  min-height: 100vh;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: inherit;
+  }
 }
+
+
 
 img {
   width: 100%;
@@ -30,33 +43,83 @@ ul, li {
   list-style-type: none;
 }
 
+h1, h2 {
+  font-family: $fontQuicksand;
+  font-style: normal;
+  font-weight: bold;
+
+  color: $darkShadeColor100;
+}
+
+h3, h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+
+  color: $darkShadeColor100;
+}
+
 .container {
   margin: 0 auto;
   max-width: $widthMobileSmall;
   
-  @include media-mobile {
-    max-width: $widthMobile;
-  }
-  @include media-tablet {
-    max-width: $widthTable;
+  @include media-laptop-large {
+    max-width: $widthLaptopLarge;
   }
   @include media-laptop {
     max-width: $widthLaptop;
   }
+  @include media-tablet {
+    max-width: $widthTable;
+  }
+  @include media-mobile {
+    max-width: $widthMobile;
+  }
+}
+
+.container-full {
+  max-width: $widthMobileSmall;
+  
   @include media-laptop-large {
     max-width: $widthLaptopLarge;
+  }
+  @include media-laptop {
+    max-width: $widthLaptop;
+  }
+  @include media-tablet {
+    max-width: $widthTable;
+  }
+  @include media-mobile {
+    max-width: $widthMobile;
+  }
+}
+
+.col-xl {
+  @include media-laptop-large {
+    @include width-col(3);
+  }
+}
+
+.col-lg {
+  @include media-laptop {
+    @include width-col(3);
+  }
+}
+
+.col-md {
+  @include media-tablet {
+    @include width-col(6);
+  }
+}
+
+.col-sm {
+  @include media-mobile {
+    @include width-col(12);
   }
 }
 
 .col {
   @include width-col(12);
 }
-
-.col-md {
-  @include media-tablet {
-    @include width-col(2);
-  }
-}
-/* @import "common/my-module.scss"; */
 /* === / Common === */
 

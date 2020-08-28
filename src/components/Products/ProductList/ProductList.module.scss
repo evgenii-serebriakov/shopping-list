@@ -1,0 +1,16 @@
+// === Products ===
+.products {
+  @include width-col(12);
+  &__content-inner{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+// === / Products ===

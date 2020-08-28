@@ -1,0 +1,16 @@
+.new-product {
+  @include width-col(6);
+  &__title {
+    text-align: center;
+  }
+}
+
+.picture {
+  margin: auto;
+  @include width-col(6);
+  &__picture-inner {
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px;
+  }
+}

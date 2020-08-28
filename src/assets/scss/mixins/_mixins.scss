@@ -22,7 +22,7 @@
 }
 
 @mixin width-col($n) {
-  width: calc((100% / #{$n}) - 0.1px);
+  width: calc(100% / 12 * #{$n});
   flex: 0 1 auto;
 }
 

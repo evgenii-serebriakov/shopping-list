@@ -1,12 +1,8 @@
 {
   "name": "This is a shopping list",
   "short_name": "Shopping list",
+  "start_url": "http://localhost:8081",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "48x48 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "favicon-16x16.png",
       "sizes": "16x16",
@@ -23,7 +19,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "background_color": "#95a5a6",
+  "theme_color": "#95a5a6",
   "display": "standalone"
 }

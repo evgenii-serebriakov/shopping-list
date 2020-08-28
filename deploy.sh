@@ -6,8 +6,8 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'Deploy'
 
-git push -f git@github.com:evgenii-serebriakov/aparments.git master:master
+git push -f git@github.com:evgenii-serebriakov/shopping-list.git master:gh-pages
 
 cd -

@@ -26,19 +26,16 @@
     }
   },
   "rules": {
-    // "react/prop-types": 0,
-    // "react-hooks/rules-of-hooks": 2,
+    "react/jsx-indent": [2, 4],
+    "react/jsx-indent-props": [2, 4],
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/jsx-filename-extension": [1, { 
       "extensions": [".js", ".jsx"] 
     }],
     "max-len": [2, 200],
-    "indent": [2, 2],
+    "indent": [2, 4],
     "semi": [2, "always"],
-    // "quotes": [2, "double", {
-    //     "allowTemplateLiterals": true
-    // }],
     "comma-dangle": [2, {
       "objects": "never",
       "arrays": "never",
@@ -47,6 +44,5 @@
       "functions": "never"
   }],
     "import/no-unresolved": 0
-    // "no-param-reassign": [2, { "props": false }]
   }
 }

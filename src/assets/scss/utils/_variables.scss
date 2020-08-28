@@ -1,9 +1,9 @@
 /* Font */
 $mainFont               : 'Roboto', sans-serif;
 $fontMontserrat         : 'Montserrat', Helvetica, Arial, sans-serif;
+$fontQuicksand          : 'Quicksand', sans-serif;
 
 /* Size */
-$mainFontColor           : #101010;
 $mainFontSize            : 18px;
 $mainFontStyle           : normal;
 $mainFontWeight          : normal;
@@ -23,23 +23,28 @@ $mediaWidthTablet        : 768px;
 $mediaWidthMobile        : 576px;
 
 /* Main color */
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-$purple-color            : #8854d0;
-$grey-color              : #808080;
+$defaultColor           : #101010;
+$primaryColor           : #444ce0;
+$successColor           : #26de81;
+$dangerColor            : #fc5c65;
+$warningColor           : #fed330;
+$lightColor             : #999999;
+$purpleColor            : #8854d0;
+$greyColor              : #808080;
+$whiteColor             : #ffffff;
+
+/* Theme colors */
+$darkShadeColor100      : #1F2041;
+$darkShadeColor75       : rgba(31, 32, 65, 0.75);;
+$darkShadeColor50       : rgba(31, 32, 65, 0.5);;
+$darkShadeColor25       : rgba(31, 32, 65, 0.25);
+$darkShadeColor5        : rgba(31, 32, 65, 0.05);
+$purpleGradient         : linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$lightPurpleColor       : #BC9CFF;
+$greenColor             : #6FCF97;
 
 /* Neutral Color */
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-/* Neutral Color */
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
+$neutralPrimary         : #303133;
+$neutralSecondary       : #909399;
+$neutralRegular         : #606266;
+$neutralPlaceholder     : #C0C4CC;
