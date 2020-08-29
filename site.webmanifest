@@ -1,0 +1,25 @@
+{
+  "name": "This is a shopping list",
+  "short_name": "Shopping list",
+  "start_url": "http://localhost:8081",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#95a5a6",
+  "theme_color": "#95a5a6",
+  "display": "standalone"
+}
